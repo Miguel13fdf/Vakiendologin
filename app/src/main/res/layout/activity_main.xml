@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="397dp"
+        android:layout_height="256dp"
+        android:layout_marginBottom="468dp"
+        android:background="#3F54CA"
+        android:contentDescription="@string/fondo_de_arriba"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blue_bg"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="223dp"
+        android:layout_height="136dp"
+        android:contentDescription="@string/logo_de_la_aplicacion"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095"
+        app:srcCompat="@drawable/logo"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonlogin1"
+        android:layout_width="168dp"
+        android:layout_height="50dp"
+        android:background="#2E42B6"
+        android:backgroundTint="#DC2E42B6"
+        android:backgroundTintMode="add"
+        android:contentDescription="@string/descripcionboton_para_login"
+        android:drawableTint="#4054C5"
+        android:text="@string/iniciar_sesion"
+        android:visibility="visible"
+        app:icon="@drawable/ic_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        app:rippleColor="#2E42B6"
+        app:strokeColor="#2E42B6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/bienvenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="392dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="20"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextPasswordlogin1"
+        android:layout_width="392dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+
+        android:drawableLeft="@drawable/ic_lock"
+        android:ems="20"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextDatelogin1"
+        android:layout_width="371dp"
+        android:layout_height="57dp"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <Spinner
+        android:id="@+id/spinnerlogin1"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
